@@ -1,0 +1,23 @@
+.modal-right {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5); 
+  
+  }
+  
+  .modal-dialog {
+    margin: auto;
+  }
+
+.modal-body{
+    color:white;
+}
+.negrita{
+  font-Weight: bold;
+}
+.colormodalinfo{
+  background-color:#171A1F;
+}
+.backcolor{
+  background-color:#1a1d21;
+   color:#b8b8b8;
+}

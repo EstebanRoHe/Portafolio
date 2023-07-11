@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    background: #12181F;
+    color: #8E929E;
+
+}
+
+.perfil{
+    border-radius: 1%;
+    background-Color: #232F3E;
+    padding: 4%;
+}
+
+@media screen and (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+
+h1 {
+    font-Weight: bold;
+    color: whitesmoke;
+}
+
+h5 {
+    font-Weight: bold;
+}
+.infoabout{
+    margin: 3% 0% 3% 0%;
+    padding: 0% 3% 0% 4%;
+}
+
+.first {
+    margin-top: 5%;
+    padding-top: 3em;
+}
+
+.about {
+    margin: 0% 0% 5% 0%;
+    padding-top: 3em;
+}
+
+.portafolio {
+    margin-bottom: 1%;
+    padding: 3em 0em 2em 0em;
+    background: #060B10;
+}
+
+.educacion{
+    padding-top: 3em;
+}
+.idiomas{
+    padding-top: 3em;
+}
+
+.habilidades {
+    margin: 3% 0% 0% 0%;
+    padding: 3em 0em 3em 0em;
+    background: #060B10;
+}
+
+.skill {
+    background: white;
+    border-radius: 2em;
+    padding: 1%;
+}
+
+.contacto {
+    padding: 3em 0em 2em 0em;
+}
+
+.card-img-top {
+    margin-bottom: 1%;
+    border-radius: 1em;
+}
+
+.imagen {
+    width: 5em;
+    margin: 1%;
+
+}
+
+.jimenez {
+    height: 12em;
+    width: 23em;
+    margin: 1%;
+    border-radius: 1em;
+}
+
+.card {
+    margin-top: 1%;
+    padding: 1%;
+
+}
+
+.card-title {
+    font-Weight: bold;
+}
+
+.btn {
+    margin-top: 1%;
+}
+
+.rosa {
+    background: #d4008e;
+    transition: background-color 0.3s ease;
+}
+
+.rosa:hover {
+    background: rgb(201, 0, 134)
+}
+
+.btnred {
+    background: #EF0708;
+    transition: background-color 0.3s ease;
+}
+
+.btnred:hover {
+    background: #db0404;
+}
+
+.imgperfil{
+    
+    width: 10em;
+    border-radius: 100%;
+    border: 1px solid #060B10;
+}
+
+
+  
