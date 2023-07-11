@@ -97,42 +97,42 @@ function App() {
 
   return (
     <><div className='principal'>
-      <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
+      <nav className="navbar navbar-dark bg-dark fixed-top">
+        <div className="container-fluid">
           <h4>Esteban Rojas Herrera</h4>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span > <i class="bi bi-person-badge"></i> Clic aquí para ver Perfil </span>
+          <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span > <i className="bi bi-person-badge"></i> Clic aquí para ver Perfil </span>
           </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Perfil</h5>
+          <div className="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div className="offcanvas-header">
+              <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">Esteban Rojas Herrera</h5>
 
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body">
+            <div className="offcanvas-body">
               <img src={perfil} className='imgperfil' alt='...' />
               <hr></hr>
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#esteban">• Esteban </a>
+              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li className="nav-item">
+                  <a className="nav-link " aria-current="page" href="#esteban">• Esteban </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#about">• Sobre mi</a>
+                <li className="nav-item">
+                  <a className="nav-link " aria-current="page" href="#about">• Sobre mi</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#portafolio">• Portafolio</a>
+                <li className="nav-item">
+                  <a className="nav-link " aria-current="page" href="#portafolio">• Portafolio</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#educacion">• Formación Académica</a>
+                <li className="nav-item">
+                  <a className="nav-link " aria-current="page" href="#educacion">• Formación Académica</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#idiomas">• Idiomas</a>
+                <li className="nav-item">
+                  <a className="nav-link " aria-current="page" href="#idiomas">• Idiomas</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#habilidades">• Habilidades Técnicas</a>
+                <li className="nav-item">
+                  <a className="nav-link " aria-current="page" href="#habilidades">• Habilidades Técnicas</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#contacto">• Contacto</a>
+                <li className="nav-item">
+                  <a className="nav-link " aria-current="page" href="#contacto">• Contacto</a>
                 </li>
 
 
@@ -517,11 +517,11 @@ function App() {
               <h1>Contacto</h1>
               <p>
                 • Telefono <i className="bi bi-telephone negrita"> (506) 8426 19 87</i><br />
-                • Whatsapp <i class="bi bi-whatsapp negrita"> (506) 8426 19 87</i><br />
+                • Whatsapp <i className="bi bi-whatsapp negrita"> (506) 8426 19 87</i><br />
                 • Correo electrónico <i className="bi bi-envelope-at negrita"> esteban_rojashe@hotmail.com</i><br />
                 • Linkedin <i className="bi bi-linkedin"> </i><a href="https://www.linkedin.com/in/esteban-rojas-herrera-557458195/"> <i> ver perfil </i></a>
                 <br />
-                • Facebook <i class="bi bi-facebook"> </i> <a href="https://www.facebook.com/esteban.rojasherrera"> <i> ver perfil </i></a>
+                • Facebook <i className="bi bi-facebook"> </i> <a href="https://www.facebook.com/esteban.rojasherrera"> <i> ver perfil </i></a>
               </p>
             </div>
           </div>
