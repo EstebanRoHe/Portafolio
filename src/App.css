@@ -19,6 +19,34 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .cvv {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cvv {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .cvv {
+        margin-top: 60%;
+    }
+}
+
+
+
+@media screen and (max-width: 180px) {
+    .cvv {
+        margin-top: 90%;
+    }
+}
+
+
+
 
 h1 {
     font-Weight: bold;
@@ -128,6 +156,8 @@ h5 {
     border-radius: 100%;
     border: 1px solid #060B10;
 }
+
+
 
 
   
