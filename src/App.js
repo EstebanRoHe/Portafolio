@@ -361,9 +361,9 @@ function App() {
             <div>
 
               <p>
-                •	Bachillerato en Ingeniería en Sistemas | Universidad Nacional de Costa Rica (Actualmente)<br />
-                •	Diplomado en Programación de Aplicaciones informáticas | Universidad Nacional de Costa Rica (Feb 2020 - Jul 2022) <Link onClick={() => showModalHandler(<Una />)}>Ver certificación</Link><br />
-                •	Ejecutivo en Ingles para Servicios | Instituto Nacional de Aprendizaje (Ene 2017 - Abr 2018) <Link onClick={() => showModalHandler(<Ina />)}>Ver certificación</Link><br />
+                •	Bachillerato en Ingeniería en Sistemas | Universidad Nacional de Costa Rica <i className='negrita'>(Actualmente)</i><br />
+                •	Diplomado en Programación de Aplicaciones informáticas | Universidad Nacional de Costa Rica <i className='negrita'>(Feb 2020 - Jul 2022) </i><Link onClick={() => showModalHandler(<Una />)}>Ver certificación</Link><br />
+                •	Ejecutivo en Ingles para Servicios | Instituto Nacional de Aprendizaje <i className='negrita'>(Ene 2017 - Abr 2018) </i><Link onClick={() => showModalHandler(<Ina />)}>Ver certificación</Link><br />
                 •	Scrum Foundation Professional Certificate SFPC <Link onClick={() => showModalHandler(<Certificacion />)}>Ver certificación</Link>
                 <br /><br />
                 Si deseas contactarme, puedes hacerlo a través de mi dirección de correo electrónico <i className="bi bi-envelope-at negrita"> esteban_rojashe@hotmail.com</i></p>
