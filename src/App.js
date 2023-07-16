@@ -519,15 +519,22 @@ function App() {
                 • Telefono <i className="bi bi-telephone negrita"> (506) 8426 19 87</i><br />
                 • Whatsapp <i className="bi bi-whatsapp negrita"> (506) 8426 19 87</i><br />
                 • Correo electrónico <i className="bi bi-envelope-at negrita"> esteban_rojashe@hotmail.com</i><br />
-                • Linkedin <i className="bi bi-linkedin"> </i><a href="https://www.linkedin.com/in/esteban-rojas-herrera-557458195/"> <i> ver perfil </i></a>
-                <br />
-                • Facebook <i className="bi bi-facebook"> </i> <a href="https://www.facebook.com/esteban.rojasherrera"> <i> ver perfil </i></a>
+                <a href="https://www.facebook.com/esteban.rojasherrera" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-facebook" style={{ fontSize: "30px", color: "#1877F2", marginRight: "1%" }}></i>
+                </a>
+                <a href="https://www.linkedin.com/in/esteban-rojas-herrera-557458195/" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-linkedin" style={{ fontSize: "30px", color: "#0A66C2",marginRight: "1%" }}></i>
+                </a>
+
+                <a href="https://github.com/EstebanRoHe?tab=repositories" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-github" style={{ fontSize: "30px", color: "#7E2E93"}}></i>
+                </a>
               </p>
             </div>
           </div>
         </div>
 
-
+       
 
         {showModal && (
           <ModalInfo
