@@ -36,8 +36,10 @@ import office from './imagenes/office.png';
 import linux from './imagenes/linux.png';
 import azure from './imagenes/Azure.png';
 import perfil from './imagenes/perfil.jpg';
-import Swal from "sweetalert2";
+import python from './imagenes/python.png';
+import django from './imagenes/django.png';
 
+import Swal from "sweetalert2";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import ModalInfo from './Components/ModalInfo';
 import ContenidoRentCar from './Components/ContenidoRentCar';
@@ -401,6 +403,10 @@ function App() {
                 className='imagen'
                 alt="..." />
 
+              <img src={python}
+                className='imagen'
+                alt="..." />
+
               <img src={php}
                 className='imagen'
                 alt="..." />
@@ -430,6 +436,11 @@ function App() {
                 alt="..." />
 
               <img src={jwt}
+                className='imagen'
+                alt="..." />
+
+                
+              <img src={django}
                 className='imagen'
                 alt="..." />
 
@@ -523,18 +534,18 @@ function App() {
                   <i className="bi bi-facebook" style={{ fontSize: "30px", color: "#1877F2", marginRight: "1%" }}></i>
                 </a>
                 <a href="https://www.linkedin.com/in/esteban-rojas-herrera-557458195/" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-linkedin" style={{ fontSize: "30px", color: "#0A66C2",marginRight: "1%" }}></i>
+                  <i className="bi bi-linkedin" style={{ fontSize: "30px", color: "#0A66C2", marginRight: "1%" }}></i>
                 </a>
 
                 <a href="https://github.com/EstebanRoHe?tab=repositories" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-github" style={{ fontSize: "30px", color: "#7E2E93"}}></i>
+                  <i className="bi bi-github" style={{ fontSize: "30px", color: "#7E2E93" }}></i>
                 </a>
               </p>
             </div>
           </div>
         </div>
 
-       
+
 
         {showModal && (
           <ModalInfo
