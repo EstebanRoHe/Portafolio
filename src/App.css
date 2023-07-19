@@ -45,16 +45,18 @@ body {
     }
 }
 
-
-
-
 h1 {
     font-Weight: bold;
     color: whitesmoke;
+    font-family: 'Poltawski Nowy', serif;
 }
 
 h5 {
     font-Weight: bold;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
 }
 .infoabout{
     margin: 3% 0% 3% 0%;
