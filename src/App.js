@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css'
 import rentcar from './imagenes/Logo.PNG';
@@ -26,7 +26,7 @@ import kotlin from './imagenes/kotlin.png';
 import androidStudio from './imagenes/androidStudio.png';
 import spotify_api from './imagenes/spotify_api.png';
 import amazon from './imagenes/amazon.png';
-import gps from './imagenes/gps.jpg';
+import gps from './imagenes/googleGps.png';
 import ubicacione from './imagenes/gps.png';
 import postman from './imagenes/postman.png';
 import cc from './imagenes/C++.png';
@@ -57,6 +57,7 @@ function App() {
   const [showModal, setShowModal] = useState(false);
   const [showModalImagenes, setShowModalImagenes] = useState(false);
   const [modalContent, setModalContent] = useState('');
+
 
   const showModalHandler = (content) => {
     setShowModal(true);
@@ -101,9 +102,9 @@ function App() {
     <><div className='principal'>
       <nav className="navbar navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
-          <h4>Esteban Rojas Herrera</h4>
+          <h4 className={"title-animacion"}>Esteban Rojas Herrera<span className='maquinaDeEscribir'>&#160;</span></h4>
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span > <i className="bi bi-person-badge"></i> Clic aquí para ver Perfil </span>
+            <span > <i className="bi bi-person-badge"></i> Perfil </span>
           </button>
           <div className="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div className="offcanvas-header">
@@ -168,12 +169,12 @@ function App() {
 
           <div className="container">
             <h1>Portafolio</h1>
-            <div className="container">
-              <div className="row">
+            <div className="container ">
+              <div className="row ">
 
-                <div className="card" style={{ width: "19rem", marginRight: "1%" }}>
-                  <img src={rentcar} className="card-img-top" alt="..." />
-                  <div className="benefit-item card">
+                <div className="card card-portafolio" style={{ width: "19rem", marginRight: "1%" }}>
+                  <img src={rentcar} className="card-img-top imagen-portafolio" alt="..." />
+                  <div className="benefit-item card card-app">
                     <h5 className="card-title"> <i className="bi bi-car-front"> Rent a car</i> </h5>
                     <p className="text-justify">
                       <img src={java}
@@ -252,9 +253,9 @@ function App() {
                   </div>
                 </div>
 
-                <div className="card" style={{ width: "19rem", marginRight: "1%" }}>
-                  <img src={jt} className="card-img-top" alt="..." />
-                  <div className="benefit-item card">
+                <div className="card card-portafolio" style={{ width: "19rem", marginRight: "1%" }}>
+                  <img src={jt} className="card-img-top imagen-portafolio" alt="..." />
+                  <div className="benefit-item card card-app">
                     <h5 className="card-title"> <i className="bi bi-window-sidebar"> (Cursos de Ingeniería en Sistemas), para la Empresa Jiménez & Tanzi </i></h5>
                     <p className="text-justify">
                       <img src={php}
@@ -287,9 +288,9 @@ function App() {
                   </div>
                 </div>
 
-                <div className="card" style={{ width: "19rem", marginRight: "1%" }}>
-                  <img src={Reproductor} className="card-img-top" alt="..." />
-                  <div className="benefit-item card">
+                <div className="card card-portafolio" style={{ width: "19rem", marginRight: "1%" }}>
+                  <img src={Reproductor} className="card-img-top imagen-portafolio" alt="..." />
+                  <div className="benefit-item card card-app">
                     <h5 className="card-title"><i className="bi bi-music-player"> Reproductor MP3</i></h5>
                     <p className="text-justify">
                       <img src={kotlin}
@@ -320,9 +321,9 @@ function App() {
                   </div>
                 </div>
 
-                <div className="card" style={{ width: "19rem", marginRight: "1%" }}>
-                  <img src={ubicacione} className="card-img-top" alt="..." />
-                  <div className="benefit-item card">
+                <div className="card card-portafolio" style={{ width: "19rem", marginRight: "1%" }}>
+                  <img src={ubicacione} className="card-img-top imagen-portafolio" alt="..." />
+                  <div className="benefit-item card card-app">
                     <h5 className="card-title"><i className="bi bi-geo-alt"> GPS</i></h5>
 
                     <p className="text-justify">
@@ -389,7 +390,7 @@ function App() {
         <div className='habilidades' id='habilidades'>
           <div className='container'>
             <h1>Habilidades Técnicas </h1>
-            <div className='skill'>
+            <div className='skill' >
 
               <img src={java}
                 className='imagen'
@@ -439,7 +440,7 @@ function App() {
                 className='imagen'
                 alt="..." />
 
-                
+
               <img src={django}
                 className='imagen'
                 alt="..." />
@@ -461,6 +462,10 @@ function App() {
                 alt="..." />
 
               <img src={amazon}
+                className='imagen'
+                alt="..." />
+
+              <img src={gps}
                 className='imagen'
                 alt="..." />
 
@@ -531,14 +536,14 @@ function App() {
                 • Whatsapp <i className="bi bi-whatsapp negrita"> (506) 8426 19 87</i><br />
                 • Correo electrónico <i className="bi bi-envelope-at negrita"> esteban_rojashe@hotmail.com</i><br />
                 <a href="https://www.facebook.com/esteban.rojasherrera" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-facebook" style={{ fontSize: "30px", color: "#1877F2", marginRight: "1%" }}></i>
+                  <i className="bi bi-facebook logo-info logo-face" ></i>
                 </a>
                 <a href="https://www.linkedin.com/in/esteban-rojas-herrera-557458195/" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-linkedin" style={{ fontSize: "30px", color: "#0A66C2", marginRight: "1%" }}></i>
+                  <i className="bi bi-linkedin logo-info logo-linkedin" ></i>
                 </a>
 
                 <a href="https://github.com/EstebanRoHe?tab=repositories" target="_blank" rel="noopener noreferrer">
-                  <i className="bi bi-github" style={{ fontSize: "30px", color: "#7E2E93" }}></i>
+                  <i className="bi bi-github logo-info logo-github" ></i>
                 </a>
               </p>
             </div>

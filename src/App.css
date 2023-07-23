@@ -7,43 +7,14 @@ body {
 
 }
 
-.perfil{
+.perfil {
     border-radius: 1%;
     background-Color: #232F3E;
     padding: 4%;
 }
 
-@media screen and (max-width: 768px) {
-    .principal {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .cvv {
-        margin-top: 10%;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .cvv {
-        margin-top: 20%;
-    }
-}
-
-@media screen and (max-width: 250px) {
-    .cvv {
-        margin-top: 60%;
-    }
-}
 
 
-
-@media screen and (max-width: 180px) {
-    .cvv {
-        margin-top: 90%;
-    }
-}
 
 h1 {
     font-Weight: bold;
@@ -55,10 +26,11 @@ h5 {
     font-Weight: bold;
 }
 
-p{
-    font-family:Arial, Helvetica, sans-serif;
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
-.infoabout{
+
+.infoabout {
     margin: 3% 0% 3% 0%;
     padding: 0% 3% 0% 4%;
 }
@@ -79,10 +51,11 @@ p{
     background: #060B10;
 }
 
-.educacion{
+.educacion {
     padding-top: 3em;
 }
-.idiomas{
+
+.idiomas {
     padding-top: 3em;
 }
 
@@ -93,7 +66,8 @@ p{
 }
 
 .skill {
-    background: white;
+
+    background: #232F3E;
     border-radius: 2em;
     padding: 1%;
 }
@@ -110,6 +84,12 @@ p{
 .imagen {
     width: 5em;
     margin: 1%;
+    transition: transform 0.3s;
+}
+
+.imagen:hover {
+    transform: scale(1.2) rotate(15deg);
+    z-index: 2;
 
 }
 
@@ -128,6 +108,7 @@ p{
 
 .card-title {
     font-Weight: bold;
+    color: rgba(255, 255, 255, 0.664);
 }
 
 .btn {
@@ -152,14 +133,119 @@ p{
     background: #db0404;
 }
 
-.imgperfil{
-    
+.imgperfil {
     width: 10em;
     border-radius: 100%;
     border: 1px solid #060B10;
 }
 
+.card-portafolio {
+    background-color: #12181f;
+    border: 2px solid;
+}
+
+.card-app {
+    background-color: #232F3E;
+    border: 1px rgba(117, 114, 114, 0.315) solid;
+}
 
 
+.imagen-portafolio {
+    transition: transform 0.3s;
 
+}
+
+.imagen-portafolio:hover {
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+    transform: translateY(-2.5em) scale(1.3);
+    z-index: 2;
+
+}
+
+.logo-face {
+    color: #1877F2;
+    transition: color 0.4s, transform 0.4s;
+}
+
+.logo-linkedin {
+    color: #0A66C2;
+    transition: color 0.4s, transform 0.4s;
+}
+
+.logo-github {
+    color: #7E2E93;
+    transition: color 0.4s, transform 0.4s;
+}
+
+.logo-info {
+    margin-right: 0.5em;
+    font-size: 30px;
+    transition: color 0.4s, transform 0.4s;
+}
+
+@keyframes colorChange {
+    0% { color: black }
+
+    50% { color: black; }
+
+    100% {  color: black;}
+}
+
+@keyframes shadowPulse {
+    0% { text-shadow: 0 0 5px #f8f8f8d7; }
+
+    50% {text-shadow: 0 0 15px #fcfbf9d7; }
+
+    100% { text-shadow: 0 0 5px #ffffffd7; }
+}
+
+.logo-info:hover {
+    animation: colorChange 1.5s infinite alternate, shadowPulse 1s infinite;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 19ch; }
+    100% { width: 19ch; }
+  }
   
+  .title-animacion {
+    white-space: nowrap;
+    width: 19ch;
+    border-right: 4px solid;
+    animation: typing 6s infinite steps(19); 
+    animation-direction: alternate; 
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+ 
+
+@media screen and (max-width: 768px) {
+    .principal {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cvv {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cvv {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .cvv {
+        margin-top: 30%;
+    }
+ 
+}
