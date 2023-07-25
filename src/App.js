@@ -88,7 +88,7 @@ function App() {
         '• Contraseña: admin <br />' +
         ' Ten en cuenta que la aplicación está desplegada en un host gratuito que se apaga después de 15 minutos de inactividad. Sin embargo, cuando vuelvas a utilizar la aplicación, se volverá a levantar en unos minutos.' +
         '</i><br /> ' +
-        '<a href="https://front-end-reant-a-car-in-react.vercel.app/">Clic aquí para ir a la página de a Reat a Car</a> ',
+        '<a href="https://reant.vercel.app/">Clic aquí para ir a la página de a Reat a Car</a> ',
       showCloseButton: true,
       focusConfirm: false,
       confirmButtonText:
