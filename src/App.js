@@ -38,6 +38,7 @@ import azure from './imagenes/Azure.png';
 import perfil from './imagenes/perfil.jpg';
 import python from './imagenes/python.png';
 import django from './imagenes/django.png';
+import vercel from './imagenes/vercel.png';
 
 import Swal from "sweetalert2";
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -87,7 +88,7 @@ function App() {
         '• Contraseña: admin <br />' +
         ' Ten en cuenta que la aplicación está desplegada en un host gratuito que se apaga después de 15 minutos de inactividad. Sin embargo, cuando vuelvas a utilizar la aplicación, se volverá a levantar en unos minutos.' +
         '</i><br /> ' +
-        '<a href="https://vercel.com/estebanrohe/front-end-reant-a-car-in-react">Clic aquí para ir a la página de a Reat a Car</a> ',
+        '<a href="https://front-end-reant-a-car-in-react.vercel.app/">Clic aquí para ir a la página de a Reat a Car</a> ',
       showCloseButton: true,
       focusConfirm: false,
       confirmButtonText:
@@ -229,7 +230,7 @@ function App() {
                         className='imagen'
                         alt="..." />
 
-                      <img src={netlify}
+                      <img src={vercel}
                         className='imagen'
                         alt="..." />
 
@@ -474,6 +475,10 @@ function App() {
                 alt="..." />
 
               <img src={render}
+                className='imagen'
+                alt="..." />
+
+              <img src={vercel}
                 className='imagen'
                 alt="..." />
 
