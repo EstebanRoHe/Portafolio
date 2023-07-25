@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css'
-import rentcar from './imagenes/Logo.PNG';
+import rentcar from './imagenes/rent.png';
 import booststrap from './imagenes/booststrap.png';
 import Reproductor from './imagenes/Reproductor.png';
 import jt from './imagenes/j&t.png';
@@ -39,6 +39,7 @@ import perfil from './imagenes/perfil.jpg';
 import python from './imagenes/python.png';
 import django from './imagenes/django.png';
 import vercel from './imagenes/vercel.png';
+import barberia from './imagenes/barberia.png';
 
 import Swal from "sweetalert2";
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -89,6 +90,25 @@ function App() {
         ' Ten en cuenta que la aplicación está desplegada en un host gratuito que se apaga después de 15 minutos de inactividad. Sin embargo, cuando vuelvas a utilizar la aplicación, se volverá a levantar en unos minutos.' +
         '</i><br /> ' +
         '<a href="https://reant.vercel.app/">Clic aquí para ir a la página de a Reat a Car</a> ',
+      showCloseButton: true,
+      focusConfirm: false,
+      confirmButtonText:
+        'Cancelar',
+
+    })
+
+  };
+
+  const modalSwalbloc = () => {
+    Swal.fire({
+      icon: 'info',
+      html:
+        ' Para acceder como administrador : <br />' +
+        ' • Usuario: admin <br />' +
+        '• Contraseña: admin <br />' +
+        ' Ten en cuenta que la aplicación está desplegada en un host gratuito que se apaga después de 15 minutos de inactividad. Sin embargo, cuando vuelvas a utilizar la aplicación, se volverá a levantar en unos minutos.' +
+        '</i><br /> ' +
+        '<a href="https://barberia-gamma.vercel.app/">Clic aquí para ir a la página de la Barbería y bloc</a> ',
       showCloseButton: true,
       focusConfirm: false,
       confirmButtonText:
@@ -255,6 +275,78 @@ function App() {
                 </div>
 
                 <div className="card card-portafolio" style={{ width: "19rem", marginRight: "1%" }}>
+                  <img src={barberia} className="card-img-top imagen-portafolio" alt="..." />
+                  <div className="benefit-item card card-app">
+                    <h5 className="card-title"><i class="bi bi-shop-window"> Barbería y bloc</i></h5>
+
+                    <p className="text-justify">
+                      <img src={python}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={js}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={"https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg"}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={django}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={react}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={jwt}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={mysql}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={booststrap}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={sweetalert2}
+                        className='imagen'
+                        alt="..." />
+
+
+                      <img src={vercel}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={render}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={railway}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={postman}
+                        className='imagen'
+                        alt="..." />
+
+                      <img src={github}
+                        className='imagen'
+                        alt="..." />
+
+                    </p>
+                    <Link className="btn btn-success" onClick={modalSwalbloc}><i className="bi bi-browser-chrome"> </i>Ir a la Barbería y bloc</Link>
+                    <a href="https://github.com/EstebanRoHe/barberia_Front_end_React" className="btn btn-success  rosa"><i className="bi bi-github"> </i>Ir al GitHub Front End </a>
+                    <a href="https://github.com/EstebanRoHe/barberia_back_end" className="btn btn-success  rosa"><i className="bi bi-github"> </i>Ir al GitHub Back End </a>
+                    
+                  </div>
+                </div>
+
+
+                <div className="card card-portafolio" style={{ width: "19rem", marginRight: "1%" }}>
                   <img src={jt} className="card-img-top imagen-portafolio" alt="..." />
                   <div className="benefit-item card card-app">
                     <h5 className="card-title"> <i className="bi bi-window-sidebar"> (Cursos de Ingeniería en Sistemas), para la Empresa Jiménez & Tanzi </i></h5>
@@ -289,6 +381,7 @@ function App() {
                   </div>
                 </div>
 
+                
                 <div className="card card-portafolio" style={{ width: "19rem", marginRight: "1%" }}>
                   <img src={Reproductor} className="card-img-top imagen-portafolio" alt="..." />
                   <div className="benefit-item card card-app">
