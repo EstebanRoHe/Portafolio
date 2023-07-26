@@ -47,6 +47,7 @@ import ModalInfo from './Components/ModalInfo';
 import ContenidoRentCar from './Components/ContenidoRentCar';
 import ContenidoMP3 from './Components/ContenidoMP3';
 import ContenidoJYT from './Components/ContenidoJYT';
+import ContenidoBarberia from './Components/ContenidoBarberia';
 import ModalImagenesJYT from "./Components/ModalImagenesJYT";
 import ContenidoGps from './Components/ContenidoGps';
 import Certificacion from './Components/Certificacion';
@@ -270,7 +271,7 @@ function App() {
                     <Link className="btn btn-success" onClick={modalSwal}><i className="bi bi-browser-chrome"> </i>Ir a la pagina Reat a Car</Link>
                     <a href="https://github.com/EstebanRoHe/Front_End_Reant_a_Car_in_React.git" className="btn btn-success  rosa"><i className="bi bi-github"> </i>Ir al GitHub Front End </a>
                     <a href="https://github.com/EstebanRoHe/Back_End_Rent_a_Car_in_Spring_Boot.git" className="btn btn-success  rosa"><i className="bi bi-github"> </i>Ir al GitHub Back End </a>
-                    <button className="btn btn-info" onClick={() => showModalHandler(<ContenidoRentCar />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
+                    <button className="btn btn-info info-color" onClick={() => showModalHandler(<ContenidoRentCar />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
                   </div>
                 </div>
 
@@ -341,7 +342,7 @@ function App() {
                     <Link className="btn btn-success" onClick={modalSwalbloc}><i className="bi bi-browser-chrome"> </i>Ir a la Barbería y bloc</Link>
                     <a href="https://github.com/EstebanRoHe/barberia_Front_end_React" className="btn btn-success  rosa"><i className="bi bi-github"> </i>Ir al GitHub Front End </a>
                     <a href="https://github.com/EstebanRoHe/barberia_back_end" className="btn btn-success  rosa"><i className="bi bi-github"> </i>Ir al GitHub Back End </a>
-                    
+                    <button className="btn btn-info info-color" onClick={() => showModalHandler(<ContenidoBarberia />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
                   </div>
                 </div>
 
@@ -375,7 +376,7 @@ function App() {
                         className='imagen'
                         alt="..." />
                     </p>
-                    <button className="btn btn-info" onClick={() => showModalHandler(<ContenidoJYT />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
+                    <button className="btn btn-info info-color" onClick={() => showModalHandler(<ContenidoJYT />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
 
                     <button type="button" className="btn btn-success btnred" onClick={showModalHandlerImagenes}><i className="bi bi-images"> </i>Imágenes </button>
                   </div>
@@ -408,10 +409,10 @@ function App() {
                         alt="..." />
 
                     </p>
-                    <a href="https://www.amazon.com/gp/product/B0CBDG26RM" className="btn btn-success"><i className="bi bi-download"> </i>Descargar en Amazon Appstore</a>
-                    <a href="https://drive.google.com/file/d/1Rmz4__TbGIX2s5MWT3rekv8mP2a3VfJk/view?usp=drive_link" className="btn btn-warning"><i className="bi bi-download"> </i>Descargar apk</a>
+                    <a href="https://www.amazon.com/gp/product/B0CBDG26RM" className="btn btn-success "><i className="bi bi-download"> </i>Descargar en Amazon Appstore</a>
+                    <a href="https://drive.google.com/file/d/1Rmz4__TbGIX2s5MWT3rekv8mP2a3VfJk/view?usp=drive_link" className="btn btn-warning descargar-color"><i className="bi bi-download"> </i>Descargar apk</a>
                     <a href="https://github.com/EstebanRoHe/Reproductor_de_Musica.git" className="btn btn-success rosa"><i className="bi bi-github"> </i>Ir al GitHub del codigo</a>
-                    <button className="btn btn-info" onClick={() => showModalHandler(<ContenidoMP3 />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
+                    <button className="btn btn-info info-color" onClick={() => showModalHandler(<ContenidoMP3 />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
                   </div>
                 </div>
 
@@ -438,9 +439,9 @@ function App() {
                         alt="..." />
 
                     </p>
-                    <a href="https://drive.google.com/file/d/1MDVzHeuOI5nikUBlyhMLFcrMnB9hNlPr/view?usp=drive_link" className="btn btn-warning"><i className="bi bi-download"> </i>Descargar apk</a>
+                    <a href="https://drive.google.com/file/d/1MDVzHeuOI5nikUBlyhMLFcrMnB9hNlPr/view?usp=drive_link" className="btn btn-warning descargar-color"><i className="bi bi-download"> </i>Descargar apk</a>
                     <a href="https://github.com/EstebanRoHe/GPS.git" className="btn btn-success rosa"><i className="bi bi-github"> </i>Ir al GitHub del codigo</a>
-                    <button className="btn btn-info" onClick={() => showModalHandler(<ContenidoGps />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
+                    <button className="btn btn-info info-color" onClick={() => showModalHandler(<ContenidoGps />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
                   </div>
                 </div>
               </div>

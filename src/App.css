@@ -133,6 +133,14 @@ p {
     background: #8e0202;
 }
 
+.info-color:hover{
+background-color: #22b6d3d2;
+}
+
+.descargar-color:hover{
+    background-color: #f9c427ba;
+}
+
 .imgperfil {
     width: 10em;
     border-radius: 100%;

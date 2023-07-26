@@ -39,8 +39,8 @@ const ContenidoRentCar = (props) => {
          frameworks y bibliotecas.
         <br />
         • En el lado del front end, se utilizó JavaScript con el framework React.js, junto con bibliotecas
-         como Axios, Bootstrap, React Bootstrap,
-         Bootstrap Icons y SweetAlert2. La aplicación del front end está desplegada en Netlify.
+         como Axios, React Router, Bootstrap, React Bootstrap,
+         Bootstrap Icons y SweetAlert2. La aplicación del front end está desplegada en Vercel.
         <br />
         • En el lado del back end, se utilizó Java con el framework Spring Boot, Spring Security para la
          implementación de JWT (JSON Web Tokens), 
