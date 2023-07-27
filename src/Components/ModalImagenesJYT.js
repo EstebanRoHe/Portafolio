@@ -2,10 +2,11 @@ import React, {useRef, useEffect } from "react";
 import "./ModalInfo.css";
 import imagen1 from "../imagenes/Imagen1.png"
 import imagen2 from "../imagenes/Imagen2.png"
-import jt from '../imagenes/j&t.png';
+import jt from '../imagenes/imagenj&t.png';
 import admin1 from "../imagenes/admi1.png"
 import admin2 from "../imagenes/admin2.png"
 import alisto from '../imagenes/alisto.png';
+
 const ModalImagenesJYT = (props) => {
     const { onClose } = props;
     const modalRef = useRef(null);
