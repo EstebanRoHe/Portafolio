@@ -5,7 +5,7 @@ const ContenidoJYT = (props) => {
 
   return (
     <div className="benefit-item card backcolor">
-      <h5 className="modal-title negrita "> La aplicación web (SOAP) es un sistema para la optimización de alisto de productos dentro de la bodega de la empresa Jiménez & Tanzi el cual contiene:</h5>
+      <h5 className="modal-title negrita ">(Cursos de Ingeniería en Sistemas), para la Empresa Jiménez & Tanzi. La aplicación web (SOAP) es un sistema para la optimización de alisto de productos dentro de la bodega de la empresa Jiménez & Tanzi el cual contiene:</h5>
       <p className="text-justify">
       <hr></hr>
         1.	Inicio de sesión.<br />

@@ -42,6 +42,8 @@ const ContenidoGps = (props) => {
         • La aplicación móvil está desarrollada utilizando el lenguaje de programación Kotlin, utilizando la implementación de Google MAP
         para la gestión de la información de la obtención de la ubicación en tiempo real, la visualización de mapas interactivos, la marcación
         de puntos de interés y la configuración de áreas restringidas (polígonos). <br />
+        <a href="https://github.com/EstebanRoHe/GPS.git" className="btn btn-success rosa"><i className="bi bi-github"> </i>Ir al GitHub del codigo</a>
+        <br />
       </p>
     </div>
   );

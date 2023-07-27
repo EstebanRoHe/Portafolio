@@ -28,6 +28,8 @@ h5 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    
 }
 
 .infoabout {
@@ -133,11 +135,11 @@ p {
     background: #8e0202;
 }
 
-.info-color:hover{
-background-color: #22b6d3d2;
+.info-color:hover {
+    background-color: #22b6d3d2;
 }
 
-.descargar-color:hover{
+.descargar-color:hover {
     background-color: #f9c427ba;
 }
 
@@ -147,15 +149,8 @@ background-color: #22b6d3d2;
     border: 1px solid #060B10;
 }
 
-.card-portafolio {
-    background-color: #12181f;
-    border: 2px solid;
-}
 
-.card-app {
-    background-color: #232F3E;
-    border: 1px rgba(117, 114, 114, 0.315) solid;
-}
+
 
 
 .imagen-portafolio {
@@ -192,46 +187,64 @@ background-color: #22b6d3d2;
 }
 
 @keyframes colorChange {
-    0% { color: black }
+    0% {
+        color: black
+    }
 
-    50% { color: black; }
+    50% {
+        color: black;
+    }
 
-    100% {  color: black;}
+    100% {
+        color: black;
+    }
 }
 
 @keyframes shadowPulse {
-    0% { text-shadow: 0 0 5px #f8f8f8d7; }
+    0% {
+        text-shadow: 0 0 5px #f8f8f8d7;
+    }
 
-    50% {text-shadow: 0 0 15px #fcfbf9d7; }
+    50% {
+        text-shadow: 0 0 15px #fcfbf9d7;
+    }
 
-    100% { text-shadow: 0 0 5px #ffffffd7; }
+    100% {
+        text-shadow: 0 0 5px #ffffffd7;
+    }
 }
 
 .logo-info:hover {
     animation: colorChange 1.5s infinite alternate, shadowPulse 1s infinite;
 }
 
-p {
-    word-wrap: break-word;
-}
+
 
 
 @keyframes typing {
-    0% { width: 0; }
-    50% { width: 19ch; }
-    100% { width: 19ch; }
-  }
-  
-  .title-animacion {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 19ch;
+    }
+
+    100% {
+        width: 19ch;
+    }
+}
+
+.title-animacion {
     white-space: nowrap;
     width: 19ch;
     border-right: 4px solid;
-    animation: typing 6s infinite steps(19); 
-    animation-direction: alternate; 
+    animation: typing 6s infinite steps(19);
+    animation-direction: alternate;
     overflow: hidden;
     word-wrap: break-word;
-  }
- 
+}
+
 
 @media screen and (max-width: 768px) {
     .principal {
@@ -255,5 +268,118 @@ p {
     .cvv {
         margin-top: 30%;
     }
- 
+
 }
+
+
+
+
+.card-portafolio {
+    background-color: #12181f;
+    border: 1px solid;
+    width: 19.4rem;
+    height: 31rem;
+    padding: 0%;
+    margin-right: 1%;
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 488px) {
+    .card-portafolio {
+        background-color: #12181f;
+        border: 1px solid;
+        width: 19.4rem;
+        height: 31rem;
+        padding: 0%;
+        margin-right: 1%;
+        margin-top: 4%;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .card-portafolio {
+        background-color: #12181f;
+        border: 1px solid;
+        width: 19.4rem;
+        height: 31rem;
+        padding: 0%;
+        margin-right: 1%;
+        margin-top: 10%;
+    }
+}
+
+
+.card-giratoria {
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+
+}
+
+.card-giratoria .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-giratoria .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card-giratoria .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card-giratoria .front h3 {
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    height: 3rem;
+    line-height: 45px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.61);
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 1rem;
+    
+    
+}
+
+.card-giratoria .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color:#232F3E;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card-app {
+    background-color: #21212130;
+    margin-top: 2%;
+    text-align: center;
+
+}
+
+
+.card-giratoria:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+
+.card-giratoria:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
