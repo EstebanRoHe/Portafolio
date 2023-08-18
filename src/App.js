@@ -178,11 +178,12 @@ function App() {
 
           <div className='about' id='about'>
             <h1>Sobre mi</h1>
-            <p>Soy estudiante de último semestre de Ingeniería en Sistemas en la Universidad Nacional de Costa Rica "UNA". <br></br>
-              El cual a través de mis estudios, he desarrollado habilidades técnicas sólidas, así como una capacidad analítica<br></br>
-              y resolutiva para abordar desafíos complejos. Además, he adquirido experiencia en la gestión de proyectos tecnológicos,<br></br>
-              la optimización de sistemas informáticos y la implementación de soluciones eficientes.
+            <p>
+              Soy Estudiante de último semestre de Ingeniería en Sistemas en la Universidad Nacional de Costa Rica, <br></br>
+              y me apasiona la tecnología. Siempre busco aprender sobre las últimas tendencias y desafíos en el campo <br></br>
+              de la informática.
             </p>
+           
             <p>Si deseas contactarme, puedes hacerlo a través de mi dirección de correo electrónico <i className="bi bi-envelope-at negrita"> esteban_rojashe@hotmail.com</i></p>
           </div>
         </div>
@@ -369,7 +370,7 @@ function App() {
                     </div>
                     <div className='face back'>
                       <p className="text-justify">
-                       
+
                         <img src={php}
                           className='imagen'
                           alt="..." />
@@ -399,10 +400,10 @@ function App() {
                     </div>
                   </div>
                   <div className='card-app'>
-                  <button type="button" className="btn btn-success btnred" onClick={showModalHandlerImagenes}><i className="bi bi-images"> </i>Ver Imágenes de la app </button>
+                    <button type="button" className="btn btn-success btnred" onClick={showModalHandlerImagenes}><i className="bi bi-images"> </i>Ver Imágenes de la app </button>
                     <button className="btn btn-info info-color" onClick={() => showModalHandler(<ContenidoJYT />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
 
-                   
+
                   </div>
                 </div>
 
@@ -414,7 +415,7 @@ function App() {
                     </div>
                     <div className='face back'>
                       <p className="text-justify">
-                      
+
                         <img src={kotlin}
                           className='imagen'
                           alt="..." />
@@ -440,8 +441,8 @@ function App() {
                     </div>
                   </div>
                   <div className='card-app'>
-                  <a href="https://www.amazon.com/gp/product/B0CBDG26RM" className="btn btn-success "><i className="bi bi-download"> </i>Descargar en Amazon Appstore</a>
-                   
+                    <a href="https://www.amazon.com/gp/product/B0CBDG26RM" className="btn btn-success "><i className="bi bi-download"> </i>Descargar en Amazon Appstore</a>
+
                     <button className="btn btn-info info-color" onClick={() => showModalHandler(<ContenidoMP3 />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
                   </div>
                 </div>
@@ -475,8 +476,8 @@ function App() {
                     </div>
                   </div>
                   <div className='card-app'>
-                  <a href="https://drive.google.com/file/d/1MDVzHeuOI5nikUBlyhMLFcrMnB9hNlPr/view?usp=drive_link" className="btn btn-warning descargar-color"><i className="bi bi-download"> </i>Descargar apk de la app</a>
-       
+                    <a href="https://drive.google.com/file/d/1MDVzHeuOI5nikUBlyhMLFcrMnB9hNlPr/view?usp=drive_link" className="btn btn-warning descargar-color"><i className="bi bi-download"> </i>Descargar apk de la app</a>
+
                     <button className="btn btn-info info-color" onClick={() => showModalHandler(<ContenidoGps />)}><i className="bi bi-info-circle"> </i>Ver detalles</button>
                   </div>
                 </div>
