@@ -22,8 +22,8 @@ const ContenidoRentCar = (props) => {
         7.	Valida si hay un usurario ya existente al crear o modificar un nuevo usuario.<br />
         8.	Valida si hay un email ya existente al crear o modificar un nuevo usuario.<br />
         9.	Valida si una contraseña es correcta al cambiar la contraseña, loguearse, o al crear un usuario nuevo.<br />
-        10.	Valida vehículos disponibles a la hora de reservar o modificar un alquiler.<br />
-        11.	Valida si el usuario a reservado un alquiler la misma fecha.<br />
+        10.	Valida vehículos disponibles a la hora de reservar por días un alquiler.<br />
+        11.	Calcula el precio en función del costo del alquiler del automóvil y la duración en días del alquiler.<br />
         12.	Envió de correo electrónico para información o contacto.<br />
         13.	Se asignan roles a los usuarios y se aplican restricciones de acceso a determinadas páginas
         o funcionalidades basadas en los roles asignados.<br />
@@ -42,11 +42,10 @@ const ContenidoRentCar = (props) => {
         como Axios, React Router, Bootstrap, React Bootstrap,
         Bootstrap Icons y SweetAlert2. La aplicación del front end está desplegada en Vercel.
         <br />
-        • En el lado del back end, se utilizó Java con el framework Spring Boot, Spring Security para la
-        implementación de JWT (JSON Web Tokens),
+        • En el lado del back end, se utilizó Java con el framework Spring Boot haciendo uso de tecnologías
+        como Lombok y Hibernate, junto con JPA, Spring Security para la implementación de la seguridad y JWT (JSON Web Tokens), 
         JavaMailSender para el envío de correos electrónicos, y Cloudinary y MultipartFile para el manejo de archivos.
-        Además, se implementó
-        Docker para facilitar la gestión y despliegue de la aplicación en la plataforma Render.
+        Además, se implementó Docker para facilitar la gestión y despliegue de la aplicación en la plataforma Render.
         <br />
         • Para almacenar los datos, se utilizó una base de datos MySQL, la cual está desplegada en Railway.
         <br />

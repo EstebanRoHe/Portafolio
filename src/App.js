@@ -179,11 +179,11 @@ function App() {
           <div className='about' id='about'>
             <h1>Sobre mi</h1>
             <p>
-              Soy Estudiante de último semestre de Ingeniería en Sistemas en la Universidad Nacional de Costa Rica, <br></br>
-              y me apasiona la tecnología. Siempre busco aprender sobre las últimas tendencias y desafíos en el campo <br></br>
-              de la informática.
+              Soy Estudiante avanzado de Ingeniería en Sistemas en la Universidad Nacional de Costa Rica con habilidad para <br></br>
+              adaptarme a nuevos retos en el desarrollo de software. Siempre busco aprender sobre las últimas tendencias y <br></br>
+              desafíos en el campo de la informática.
             </p>
-           
+
             <p>Si deseas contactarme, puedes hacerlo a través de mi dirección de correo electrónico <i className="bi bi-envelope-at negrita"> esteban_rojashe@hotmail.com</i></p>
           </div>
         </div>
